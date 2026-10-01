@@ -323,3 +323,86 @@ body {
     margin-top: auto;
     border-top: 1px solid var(--border-color);
 }
+/* ==========================================
+   تنسيقات شاشات الموبايل والهواتف الذكية
+   ========================================== */
+@media (max-width: 768px) {
+    /* ضبط الهيدر وشريط التنقل */
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+
+    .logo-badge {
+        font-size: 0.9rem;
+        padding: 4px 8px;
+    }
+
+    .logo-text .author {
+        font-size: 0.85rem;
+    }
+
+    .logo-text .subtext {
+        font-size: 0.65rem;
+    }
+
+    /* ضبط كروت الرئيسية لتعرض كارتين فقط في السطر أو كارت واحد */
+    .grid-cards {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 10px;
+    }
+
+    .card {
+        padding: 1rem 0.5rem;
+    }
+
+    .card-icon {
+        font-size: 1.5rem;
+    }
+
+    /* ضبط كارت الأذكار والخطوط للموبايل */
+    .azkar-card {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .zekr-text {
+        font-size: 1.15rem;
+        line-height: 1.9;
+    }
+
+    .count-number {
+        font-size: 1.6rem;
+    }
+
+    /* ضبط شبكة سور القرآن النافذة المنبثقة */
+    .surah-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 8px;
+    }
+
+    .quran-modal-content {
+        width: 95%;
+        padding: 1.2rem;
+        max-height: 85vh;
+    }
+
+    .quran-text {
+        font-size: 1.25rem;
+        line-height: 2.1;
+    }
+
+    /* ضبط المسبحة والبوصلة */
+    .masbaha-btn {
+        width: 100px;
+        height: 100px;
+        font-size: 1rem;
+    }
+
+    .compass {
+        width: 160px;
+        height: 160px;
+    }
+
+    .compass-arrow {
+        height: 70px;
+    }
+}
